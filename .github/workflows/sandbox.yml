@@ -1,0 +1,13 @@
+name: Sandbox synchronization checks
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-safety:
+    name: Offline deployment safety
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harmless sandbox check
+        run: printf '%s\n' 'Sandbox revision 1; no deployment or application code.'

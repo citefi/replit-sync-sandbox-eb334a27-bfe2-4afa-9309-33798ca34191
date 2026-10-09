@@ -1,0 +1,1 @@
+This harmless fixture will be removed in the PR.
